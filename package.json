@@ -1,0 +1,34 @@
+{
+  "name": "cracking-interview-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "check": "npx eslint . --ext .ts",
+    "tsc": "tsc",
+    "test": "jasmine-ts --config=jasmine.json",
+    "test:watch": "chokidar \"**/*.{js,json}\" -c \"npm test\" --silent --initial --ignore node_modules"
+  },
+  "author": "Mariusz Dubielecki",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@types/jasmine": "^3.4.1",
+    "@types/node": "^12.7.8",
+    "chokidar-cli": "^2.0.0",
+    "dateformat": "^3.0.3",
+    "jasmine": "3.5.0",
+    "jasmine-node": "^3.0.0",
+    "jasmine-reporters": "^2.4.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "jasmine-ts": "^0.4.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^3.9.10"
+  }
+}
