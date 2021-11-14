@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Build
-        uses: actions/setup-node@v2.4.1
-        run: npm install
-
-      - name: Test
-        uses: actions/setup-node@v2.4.1
-        run: npm test
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - run: npm test
